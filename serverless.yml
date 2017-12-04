@@ -70,7 +70,7 @@ stepFunctions:
     stateMachines:
         hellostep1:
           events:
-            - s3: amxorwell
+            - s3: alxorwell
           definition:
               Comment: "Step 1 in state machine"
               StartAt: StartExecution
@@ -84,7 +84,7 @@ stepFunctions:
 # you can add CloudFormation resource templates here
 resources:
   Resources:
-    S3Bucketamxorwell:
+    S3Bucketalxorwell:
       Type: AWS::S3::Bucket
       Properties:
         BucketName: alm-orwell-processing
